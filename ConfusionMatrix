@@ -1,0 +1,16 @@
+Confusion Matrix
+
+A confusion matrix is used to describe the performance of classification model.
+
+1. True positive(TP): cases when classifier predicted TRUE(they have disease), and correct class was TRUE(the patient has disease).
+2. True negative(TN): cases when model predicted FALSE(no disease), and correct class was FALSE(patient do not have disease)'
+3. False positives(FP) (Type I error): classifier predicted TRUE, but correct class was FALSE(patient did not have disease).
+4. False negative(FN) (Type II error): classifier predicted FALSE(patient do not have disease), but they have actually do have disease
+
+
+Key performance indicators (KPI)
+
+Classification Accuracy = (TP+TN)/(TP+TN+FP+FN)
+Misclassification rate(Error Rate) = (FP+FN)/(TP+TN+FP+FN)
+Precision=TP/Total TRUE Prediction=TP/(TP+FP)(when model predicted TRUE class, how often was it right?)
+Recall=TP/Actual TRUE=TP/(TP+FN)(When the class was actually TRUE, how often did the classifier get it right?)
